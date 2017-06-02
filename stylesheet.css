@@ -1,5 +1,6 @@
-#page1 .myDiv {
-  background-color: white;
+#page1
+ body {
+   background-color: white;
 }    
 h1 {
   font-family: brush script std;
@@ -31,4 +32,4 @@ p2 {
 a:hover {
   color: #C7A500;
 }
-}
+
