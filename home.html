@@ -1,10 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="stylesheet.css" rel="stylesheet">
 <title>Home</title>
+<style>
+html {
+  height: 100%;
+  overflow: hidden;
+}
+h2 {
+  font-size: 45px;
+  text-align: center;
+  font-family: sans-serif;
+}
+h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: brush script std;
+  color: #C7A500;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 120px;
+  font-family: brush script std;
+  color: #C7A500;
+  text-shadow: 3px 3px 3px black;
+}
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: black;
+}
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, .7);
+}
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, .7);
+}
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+.slide,
+.slide:before {
+  background: 50% 50% / cover;
+}
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: black;
+  text-shadow: 0 2px 2px #000;
+}
+#title {
+  background-image: url("http://img.taste.com.au/71NUtlOC/taste/2016/11/potato-curry-with-roti-101092-1.jpeg");
+  background-attachment: fixed;
+}
+#slide1:before {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
+  z-index: -1;
+}
+#slide2 {
+  background-image: url("hhttps://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
+  background-attachment: fixed;
+}
+#slide3:before {
+  background-image: url("http://tinglingtaste.com/wp-content/uploads/2016/05/DSC_9158-800x600.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+#slide4 {
+  background: white;
+}
+.menubar {
+  background-color: white;
+  border: 18px solid white;
+  padding-left: 350px;
+}
+.menubar a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 25px;
+  padding: 100px;
+}
+a:hover {
+  color: #C7A500;
+}
+</style>
 </head>
-<body id="home">
+<body id=home>
 <div class="menubar">
   <a href="https://rahulgaur12.github.io/home.html">Home</a>
   <a href="https://rahulgaur12.github.io/menu.html">Menu</a>
